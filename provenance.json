@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "upstream_commit": "48e6713d3e26b49dd94fa6645b4aeac6cb25a229",
+  "scope": "Portable versions preserve numerical results and fingerprints of the recorded synthetic audit runs.",
+  "files": {
+    "LICENSE.upstream-MIT.txt": {
+      "recorded_sha256": "8abeab0a7d94144bca83b7c83020f5ec26ea25555ad45e6f7b2e05ce88a95f26",
+      "staged_sha256": "8abeab0a7d94144bca83b7c83020f5ec26ea25555ad45e6f7b2e05ce88a95f26",
+      "adaptation": "Byte-identical copy; location may differ."
+    },
+    "source/LICENSE": {
+      "recorded_sha256": "8abeab0a7d94144bca83b7c83020f5ec26ea25555ad45e6f7b2e05ce88a95f26",
+      "staged_sha256": "8abeab0a7d94144bca83b7c83020f5ec26ea25555ad45e6f7b2e05ce88a95f26",
+      "adaptation": "Byte-identical copy; location may differ."
+    },
+    "source/auditor__detectors__mi.py": {
+      "recorded_sha256": "8a7ce46570d48d9f8746372f35f42b8d33f8aad9b999fb25e3cb3438db8ee280",
+      "staged_sha256": "8a7ce46570d48d9f8746372f35f42b8d33f8aad9b999fb25e3cb3438db8ee280",
+      "adaptation": "Byte-identical copy; location may differ."
+    },
+    "source/auditor__mi_estimators.py": {
+      "recorded_sha256": "36980b9f08a6160b6e9e82932e0f3e1bd126a01c1476d1d50f18f4b2a9fa84df",
+      "staged_sha256": "36980b9f08a6160b6e9e82932e0f3e1bd126a01c1476d1d50f18f4b2a9fa84df",
+      "adaptation": "Byte-identical copy; location may differ."
+    },
+    "source/mi.original.txt": {
+      "recorded_sha256": "55007e97dbdff88019a6b54b1349e88e383fc3a1e5d4d9f11a15e555b920cec4",
+      "staged_sha256": "55007e97dbdff88019a6b54b1349e88e383fc3a1e5d4d9f11a15e555b920cec4",
+      "adaptation": "Byte-identical copy; location may differ."
+    },
+    "source/mi.patched.txt": {
+      "recorded_sha256": "27b9af5f8f44a923cbc2560a3510e2948bf2a2d44c9d03a2c056472b327d9afd",
+      "staged_sha256": "27b9af5f8f44a923cbc2560a3510e2948bf2a2d44c9d03a2c056472b327d9afd",
+      "adaptation": "Byte-identical copy; location may differ."
+    },
+    "source/mi_estimators.py": {
+      "recorded_sha256": "36980b9f08a6160b6e9e82932e0f3e1bd126a01c1476d1d50f18f4b2a9fa84df",
+      "staged_sha256": "36980b9f08a6160b6e9e82932e0f3e1bd126a01c1476d1d50f18f4b2a9fa84df",
+      "adaptation": "Byte-identical copy; location may differ."
+    },
+    "source/run_adaptive_lowrate.source.txt": {
+      "recorded_sha256": "b0f54e115b3b6c7c2d754a450bb5a2e951bd30d0742aae12f9cfb060d6e8ad1e",
+      "staged_sha256": "b0f54e115b3b6c7c2d754a450bb5a2e951bd30d0742aae12f9cfb060d6e8ad1e",
+      "adaptation": "Byte-identical copy; location may differ."
+    },
+    "contract_audit/test_contract_audit.py": {
+      "recorded_sha256": "3b3d881d05424d5713d9953f3c229fa554cdbfb7232800d632875ca265f88200",
+      "staged_sha256": "54daef5bd70c02870f4d8f2f95d6ad731b1cb6e497430bb4fc651f2ed732c085",
+      "adaptation": "Module description uses impersonal authorship; test logic unchanged."
+    },
+    "contract_audit/test_consumer_interface.py": {
+      "recorded_sha256": "8719b5a52a81902db6296bec60961e5002401c9e9fcf8d1713bfad5c19955c47",
+      "staged_sha256": "8719b5a52a81902db6296bec60961e5002401c9e9fcf8d1713bfad5c19955c47",
+      "adaptation": "Byte-identical copy; location may differ."
+    },
+    "contract_audit/neural_results.json": {
+      "recorded_sha256": "8353b375459dd6e3a0d32cd92a15295beb30c268973d9940acc3425d6d4b2e4a",
+      "staged_sha256": "8353b375459dd6e3a0d32cd92a15295beb30c268973d9940acc3425d6d4b2e4a",
+      "adaptation": "Byte-identical copy; location may differ."
+    },
+    "contract_audit/neural_cell_summary.csv": {
+      "recorded_sha256": "d1eb152e4b9ac18f5f33d11e72cf1277bdb164617c5e4feebbc0e4e87bf178d9",
+      "staged_sha256": "d1eb152e4b9ac18f5f33d11e72cf1277bdb164617c5e4feebbc0e4e87bf178d9",
+      "adaptation": "Byte-identical copy; location may differ."
+    },
+    "contract_audit/contract_audit.py": {
+      "recorded_sha256": "3d220c99a235e37b3acf8620ae540b0d8012a69376b30645eeaff776c371ad69",
+      "staged_sha256": "a46275868d0e49ff6c137e8e0aae3c48eee05909b7ac1d4d388bbe3172110d73",
+      "adaptation": "Default source locations and emitted provenance paths changed to repository-relative locations; computations unchanged."
+    },
+    "contract_audit/consumer_interface_audit.py": {
+      "recorded_sha256": "ebd9b0a03d9e62558654e47dabc2336d90898f09937ae31324f37b88396e0280",
+      "staged_sha256": "bc63f234260d0e98f081289accdd0a73b1d2822d99c5796ae769d8a89643f4de",
+      "adaptation": "Default source locations and emitted provenance paths changed to repository-relative locations; computations unchanged."
+    },
+    "contract_audit/results.json": {
+      "recorded_sha256": "84b47f9c91bd0c96a789b5fd702b38bb20fc9599ad5b4e3da0ca30c227ce016a",
+      "staged_sha256": "030e68ec0940024843a44bcb944a55b29ef3a2b629f797d4f33c7c1ddbb39e3d",
+      "adaptation": "Non-scientific metadata omitted; source locations made repository-relative. Scientific values unchanged."
+    },
+    "contract_audit/consumer_interface_results.json": {
+      "recorded_sha256": "c3efe8d36346bab234e41d688bcc62e3b947b83c224474744827cdf8d9ea12de",
+      "staged_sha256": "186b7cc8cb10c3d2603fc9708bb44dc7b3c78f4c91816db68ff84dc717b54eba",
+      "adaptation": "Non-scientific metadata omitted; source locations made repository-relative. Scientific values unchanged."
+    },
+    "contract_audit/integration_results.json": {
+      "recorded_sha256": "c70826609a0ec9122a60ff0cfb064c6ea35a747a52cc69511601383ce44af8cc",
+      "staged_sha256": "5178c190252875f2d01784d8463648a09af8cb024f72b547f1507b24b3293059",
+      "adaptation": "Non-scientific metadata omitted; source locations made repository-relative. Scientific values unchanged."
+    },
+    "contract_audit/experiment_protocol.json": {
+      "recorded_sha256": "654f1d070222c597d3b47bef99dc269a3d05bd448d4b32aafd9ed4b92653bf2f",
+      "staged_sha256": "a975fe7165f79e423c28982bc1bd6c7ce0f533c8199661bd225a1532dd3ed455",
+      "adaptation": "Removed review-process-only field and review chronology; predeclared numerical design unchanged."
+    },
+    "contract_audit/toy_neural_experiment.py": {
+      "recorded_sha256": "91f80c5e3b0657cab16de8c1566ca52868113fade19a95359142240942fbf586",
+      "staged_sha256": "a1507e9c476f0b6baf7cabda4c0d97487a28634a21761a1738ba805be8731d83",
+      "adaptation": "Updated expected protocol hash for metadata-only public protocol adaptation; numerical implementation unchanged."
+    },
+    "contract_audit/integration_protocol.json": {
+      "recorded_sha256": "66548f0a9607cac9cb2c5afcd416381058546fb8a6a073b928da91ba2de08256",
+      "staged_sha256": "c0435ea36c9b1aa0de3a1330380adc12d7f6976ebd9d706222fd1708666d6ed7",
+      "adaptation": "Non-scientific metadata omitted; whitelist paths made repository-relative. Fixture, methods, budgets, and limitations preserved."
+    },
+    "contract_audit/integration_regression.py": {
+      "recorded_sha256": "9857cf3c7cd5d5e9c3f6c7401e07629982bc4f32940dca74cf9dc4bbc424909d",
+      "staged_sha256": "f162d63ae5812bd586921527233aaa80fba59fe6e435936a8279c6b3738fad13",
+      "adaptation": "Portable source/output paths and --execute --output-dir interface. Numerical functions, immutable source hashes, one-shot markers, BLAS limits, counters, and fresh-output guard preserved."
+    },
+    "contract_audit/verify_results.py": {
+      "recorded_sha256": "3b1cbadf88d0e3f30923c6086cef2e8638331d0d3c20691ac148a7a48b297eeb",
+      "staged_sha256": "1f6707800c326540b37e7e766b5c97d214c67081463bb99399e2336f743eb8f5",
+      "adaptation": "Verifies both recorded-run fingerprints and public-adaptation hashes; scientific result checks unchanged."
+    },
+    "patches/quarantine-mi-p-value.patch": {
+      "recorded_sha256": "7ce91c57a316d098c9b99eca84f3cc5676d23f9a5f37e949d38bb60bad086985",
+      "staged_sha256": "7ce91c57a316d098c9b99eca84f3cc5676d23f9a5f37e949d38bb60bad086985",
+      "adaptation": "Byte-identical copy; location may differ."
+    },
+    "patches/quarantine-mi-p-value-with-release-mirror.patch": {
+      "recorded_sha256": "40f0d312234066857f5a36dfd45b977efb76bd03ed86e99f3dddaa2e0871637d",
+      "staged_sha256": "40f0d312234066857f5a36dfd45b977efb76bd03ed86e99f3dddaa2e0871637d",
+      "adaptation": "Byte-identical copy; location may differ."
+    },
+    "patches/verify_quarantine_patch.py": {
+      "recorded_sha256": "658b80f8c9f8e8495e3b7ad74d3fb77191c9c8d8684326963496f9a3cc2c2231",
+      "staged_sha256": "41b0631485ace6bbece5aab27d7e55fc49ae3f46c461bf2d9b71d6df47e3a3e8",
+      "adaptation": "Source reads use ../source; verification and generated patch contents unchanged."
+    }
+  }
+}

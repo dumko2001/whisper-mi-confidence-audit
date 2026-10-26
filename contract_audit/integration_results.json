@@ -1,0 +1,396 @@
+{
+  "status": "PASS",
+  "scope": "actual inspected detector/estimator modules with explicitly local feature/container/Gaussian adapters; not full repository pipeline",
+  "source_manifest": {
+    "original": {
+      "path": "source/mi.original.txt",
+      "sha256": "55007e97dbdff88019a6b54b1349e88e383fc3a1e5d4d9f11a15e555b920cec4",
+      "bytes": 9048
+    },
+    "patched": {
+      "path": "source/mi.patched.txt",
+      "sha256": "27b9af5f8f44a923cbc2560a3510e2948bf2a2d44c9d03a2c056472b327d9afd",
+      "bytes": 9521
+    },
+    "estimator": {
+      "path": "source/auditor__mi_estimators.py",
+      "sha256": "36980b9f08a6160b6e9e82932e0f3e1bd126a01c1476d1d50f18f4b2a9fa84df",
+      "bytes": 6039
+    }
+  },
+  "static_contract": {
+    "matching_estimator_and_rng_call_count": 9
+  },
+  "runtime_seconds": 0.588630202022614,
+  "runtime_counters": {
+    "detector_calls": 8,
+    "spy_estimator_calls": 30,
+    "actual_estimator_calls": 30,
+    "actual_training_steps_total": 4560
+  },
+  "blas_thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "identical_complete_spy_calls_across_three_run_pairs": true,
+  "spy_call_trace": [
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "e4d8b5e93f6666dcbe50acb87a003f24e28c7753b295bee267cd20c67a7bfc4a",
+      "marginal_sha256": "48cfd5e81df4e45fab82cee0e29205d0139f6ba8eb2e221c7ac9af4fee069d61",
+      "method": "dv",
+      "steps": 200,
+      "batch_size": 64,
+      "seed": 42
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "e4d8b5e93f6666dcbe50acb87a003f24e28c7753b295bee267cd20c67a7bfc4a",
+      "marginal_sha256": "48cfd5e81df4e45fab82cee0e29205d0139f6ba8eb2e221c7ac9af4fee069d61",
+      "method": "nwj",
+      "steps": 200,
+      "batch_size": 64,
+      "seed": 43
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "e4d8b5e93f6666dcbe50acb87a003f24e28c7753b295bee267cd20c67a7bfc4a",
+      "marginal_sha256": "0d9cbb8bda68907e1d6a561ec8c8558384be705b3a6e114c3ff0fc1acdcd5c86",
+      "method": "dv",
+      "steps": 120,
+      "batch_size": 64,
+      "seed": 100
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "e4d8b5e93f6666dcbe50acb87a003f24e28c7753b295bee267cd20c67a7bfc4a",
+      "marginal_sha256": "a20d4a6cdba703bcdf4acf65b8a1f837e099e8720344b3605877fe99ca3c6de6",
+      "method": "dv",
+      "steps": 120,
+      "batch_size": 64,
+      "seed": 101
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "e4d8b5e93f6666dcbe50acb87a003f24e28c7753b295bee267cd20c67a7bfc4a",
+      "marginal_sha256": "8b7269351657c4a709d582ee4a09cb132bcff6c716a6142366f0e72c342fe8d5",
+      "method": "dv",
+      "steps": 120,
+      "batch_size": 64,
+      "seed": 102
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "23f810526a26f2e05c72010c95d0cdce61e349ba7fdd1d23729031989c3a1347",
+      "marginal_sha256": "4defab136b20895dd213348929f179d42bfb06e1586b24b192d9e79d18d5324d",
+      "method": "dv",
+      "steps": 200,
+      "batch_size": 64,
+      "seed": 42
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "23f810526a26f2e05c72010c95d0cdce61e349ba7fdd1d23729031989c3a1347",
+      "marginal_sha256": "4defab136b20895dd213348929f179d42bfb06e1586b24b192d9e79d18d5324d",
+      "method": "nwj",
+      "steps": 200,
+      "batch_size": 64,
+      "seed": 43
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "23f810526a26f2e05c72010c95d0cdce61e349ba7fdd1d23729031989c3a1347",
+      "marginal_sha256": "ded77e4df6babbf753bc27f9a40406c0b0d9bd2126def785b71ce68fee70c980",
+      "method": "dv",
+      "steps": 120,
+      "batch_size": 64,
+      "seed": 100
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "23f810526a26f2e05c72010c95d0cdce61e349ba7fdd1d23729031989c3a1347",
+      "marginal_sha256": "744215523ab8e84f79b1a9ecc8701fcd1c7a7cb0d216e3592b039964c9ceb5d7",
+      "method": "dv",
+      "steps": 120,
+      "batch_size": 64,
+      "seed": 101
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "23f810526a26f2e05c72010c95d0cdce61e349ba7fdd1d23729031989c3a1347",
+      "marginal_sha256": "5507e19318c3035b2029120fa51a444f6351c6d2ee12c18f44ce9f7d5c1535d3",
+      "method": "dv",
+      "steps": 120,
+      "batch_size": 64,
+      "seed": 102
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "a302e0fce1aff148c69a42a8cf78775f9e467836f9202d22f485083c75ff0899",
+      "marginal_sha256": "5dcd6891b51a3800082f6a41574fa2f76c2a9de6bc3abe351bc631caf8854fa7",
+      "method": "dv",
+      "steps": 200,
+      "batch_size": 64,
+      "seed": 42
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "a302e0fce1aff148c69a42a8cf78775f9e467836f9202d22f485083c75ff0899",
+      "marginal_sha256": "5dcd6891b51a3800082f6a41574fa2f76c2a9de6bc3abe351bc631caf8854fa7",
+      "method": "nwj",
+      "steps": 200,
+      "batch_size": 64,
+      "seed": 43
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "a302e0fce1aff148c69a42a8cf78775f9e467836f9202d22f485083c75ff0899",
+      "marginal_sha256": "3106a2d3e4d84b90cd9ccd1365502d813db3d349dd9a5d74d9268b8a735d6c36",
+      "method": "dv",
+      "steps": 120,
+      "batch_size": 64,
+      "seed": 100
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "a302e0fce1aff148c69a42a8cf78775f9e467836f9202d22f485083c75ff0899",
+      "marginal_sha256": "4fab589055e8811c30dd1742a279c46f1c899be5e515058eab5d2e6c0998f34a",
+      "method": "dv",
+      "steps": 120,
+      "batch_size": 64,
+      "seed": 101
+    },
+    {
+      "joint_shape": [
+        16,
+        20
+      ],
+      "marginal_shape": [
+        16,
+        20
+      ],
+      "joint_sha256": "a302e0fce1aff148c69a42a8cf78775f9e467836f9202d22f485083c75ff0899",
+      "marginal_sha256": "63938acd6b95f8e1682e37abe00c7c92fd6b44a5bdcd6b6a0116989b53fd3964",
+      "method": "dv",
+      "steps": 120,
+      "batch_size": 64,
+      "seed": 102
+    }
+  ],
+  "spy_holm_before": [
+    "cross_run_mi"
+  ],
+  "spy_holm_after": [],
+  "zero_fit_edgecases": {
+    "insufficient_runs": {
+      "before": {
+        "name": "cross_run_mi",
+        "statistic": 0.0,
+        "p_value": 1.0,
+        "details": {
+          "reason": "insufficient_runs"
+        }
+      },
+      "after": {
+        "name": "cross_run_mi",
+        "statistic": 0.0,
+        "p_value": 1.0,
+        "details": {
+          "reason": "insufficient_runs"
+        }
+      },
+      "exactly_equal": true
+    },
+    "no_pairs": {
+      "before": {
+        "name": "cross_run_mi",
+        "statistic": 0.0,
+        "p_value": 1.0,
+        "details": {
+          "reason": "no_pairs"
+        }
+      },
+      "after": {
+        "name": "cross_run_mi",
+        "statistic": 0.0,
+        "p_value": 1.0,
+        "details": {
+          "reason": "no_pairs"
+        }
+      },
+      "exactly_equal": true
+    }
+  },
+  "numeric_existing_details_and_statistic_exactly_equal": true,
+  "numeric_before": {
+    "name": "cross_run_mi",
+    "statistic": 7.345526523930681,
+    "p_value": 4.3785882283276923e-16,
+    "details": {
+      "mi_values": [
+        7.930858318772607,
+        6.843394961935071,
+        7.2623262910843644
+      ],
+      "plugin_values": [
+        2.7725887219838437,
+        2.7725887219838437,
+        2.7725887219838437
+      ],
+      "dv_values": [
+        7.930858318772607,
+        6.843394961935071,
+        7.2623262910843644
+      ],
+      "nwj_values": [
+        5.457777638159527,
+        5.053886920210133,
+        5.314434902461866
+      ],
+      "null_mean": 2.9093630958324552,
+      "null_std": 0.5515468462427977,
+      "num_pairs": 3,
+      "estimator": "dv"
+    }
+  },
+  "numeric_after": {
+    "name": "cross_run_mi",
+    "statistic": 7.345526523930681,
+    "p_value": 1.0,
+    "details": {
+      "mi_values": [
+        7.930858318772607,
+        6.843394961935071,
+        7.2623262910843644
+      ],
+      "plugin_values": [
+        2.7725887219838437,
+        2.7725887219838437,
+        2.7725887219838437
+      ],
+      "dv_values": [
+        7.930858318772607,
+        6.843394961935071,
+        7.2623262910843644
+      ],
+      "nwj_values": [
+        5.457777638159527,
+        5.053886920210133,
+        5.314434902461866
+      ],
+      "null_mean": 2.9093630958324552,
+      "null_std": 0.5515468462427977,
+      "num_pairs": 3,
+      "estimator": "dv",
+      "p_value_status": "unavailable",
+      "p_value_policy": "conservative_no_rejection",
+      "reference_kind": "same_joint_marginal_resampling",
+      "uncalibrated_tail_score": 4.3785882283276923e-16
+    }
+  },
+  "warnings": [],
+  "limitations": [
+    "Local feature and Gaussian adapters, not full feature pipeline or upstream pvalues helper.",
+    "No real-data FPR, power, calibration, ROC or adaptive-run claim.",
+    "Passing a quarantine integration does not establish a valid independence-null p-value."
+  ]
+}

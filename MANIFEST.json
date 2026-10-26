@@ -1,0 +1,166 @@
+{
+  "format": 1,
+  "scope": "Scientific reproducibility companion: selected upstream MIT source, original synthetic audit scripts, saved synthetic numerical outputs, and manuscript.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1075,
+      "sha256": "8959eee63bc4d7446877cbc685c54dab0e25a8cd6e2165154ac88467d9f92121"
+    },
+    {
+      "path": "LICENSE.upstream-MIT.txt",
+      "bytes": 1080,
+      "sha256": "8abeab0a7d94144bca83b7c83020f5ec26ea25555ad45e6f7b2e05ce88a95f26"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5936,
+      "sha256": "238509dc9b2a2ba93fce71564c76a6f76c10ae8f8e85f8b842a0f20125da63c3"
+    },
+    {
+      "path": "contract_audit/consumer_interface_audit.py",
+      "bytes": 3698,
+      "sha256": "bc63f234260d0e98f081289accdd0a73b1d2822d99c5796ae769d8a89643f4de"
+    },
+    {
+      "path": "contract_audit/consumer_interface_results.json",
+      "bytes": 1549,
+      "sha256": "186b7cc8cb10c3d2603fc9708bb44dc7b3c78f4c91816db68ff84dc717b54eba"
+    },
+    {
+      "path": "contract_audit/contract_audit.py",
+      "bytes": 13015,
+      "sha256": "a46275868d0e49ff6c137e8e0aae3c48eee05909b7ac1d4d388bbe3172110d73"
+    },
+    {
+      "path": "contract_audit/experiment_protocol.json",
+      "bytes": 4340,
+      "sha256": "a975fe7165f79e423c28982bc1bd6c7ce0f533c8199661bd225a1532dd3ed455"
+    },
+    {
+      "path": "contract_audit/integration_protocol.json",
+      "bytes": 2837,
+      "sha256": "c0435ea36c9b1aa0de3a1330380adc12d7f6976ebd9d706222fd1708666d6ed7"
+    },
+    {
+      "path": "contract_audit/integration_regression.py",
+      "bytes": 13484,
+      "sha256": "f162d63ae5812bd586921527233aaa80fba59fe6e435936a8279c6b3738fad13"
+    },
+    {
+      "path": "contract_audit/integration_results.json",
+      "bytes": 10015,
+      "sha256": "5178c190252875f2d01784d8463648a09af8cb024f72b547f1507b24b3293059"
+    },
+    {
+      "path": "contract_audit/neural_cell_summary.csv",
+      "bytes": 1379,
+      "sha256": "d1eb152e4b9ac18f5f33d11e72cf1277bdb164617c5e4feebbc0e4e87bf178d9"
+    },
+    {
+      "path": "contract_audit/neural_results.json",
+      "bytes": 132610,
+      "sha256": "8353b375459dd6e3a0d32cd92a15295beb30c268973d9940acc3425d6d4b2e4a"
+    },
+    {
+      "path": "contract_audit/results.json",
+      "bytes": 4401,
+      "sha256": "030e68ec0940024843a44bcb944a55b29ef3a2b629f797d4f33c7c1ddbb39e3d"
+    },
+    {
+      "path": "contract_audit/test_consumer_interface.py",
+      "bytes": 1822,
+      "sha256": "8719b5a52a81902db6296bec60961e5002401c9e9fcf8d1713bfad5c19955c47"
+    },
+    {
+      "path": "contract_audit/test_contract_audit.py",
+      "bytes": 6152,
+      "sha256": "54daef5bd70c02870f4d8f2f95d6ad731b1cb6e497430bb4fc651f2ed732c085"
+    },
+    {
+      "path": "contract_audit/toy_neural_experiment.py",
+      "bytes": 12907,
+      "sha256": "a1507e9c476f0b6baf7cabda4c0d97487a28634a21761a1738ba805be8731d83"
+    },
+    {
+      "path": "contract_audit/verify_integration_results.py",
+      "bytes": 1749,
+      "sha256": "874108a2c1a623f151b9fc42089c6681f73708cd7432d8b36e6a340faf291e1e"
+    },
+    {
+      "path": "contract_audit/verify_results.py",
+      "bytes": 2604,
+      "sha256": "1f6707800c326540b37e7e766b5c97d214c67081463bb99399e2336f743eb8f5"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 614,
+      "sha256": "b904e480ea546ab15240cfaf97d631bc4cfafb489bb7562af84053208e337683"
+    },
+    {
+      "path": "paper/paper.md",
+      "bytes": 21083,
+      "sha256": "26f35096fca75334b194e974e19dfe1b43b643c2acdb8032676149dad6beb3a6"
+    },
+    {
+      "path": "paper/paper.pdf",
+      "bytes": 57636,
+      "sha256": "279bc7a2c0d4afa9855c082a40f1ee731ccea7598b19aea9e14bddf4a26cfa29"
+    },
+    {
+      "path": "patches/quarantine-mi-p-value-with-release-mirror.patch",
+      "bytes": 2354,
+      "sha256": "40f0d312234066857f5a36dfd45b977efb76bd03ed86e99f3dddaa2e0871637d"
+    },
+    {
+      "path": "patches/quarantine-mi-p-value.patch",
+      "bytes": 1164,
+      "sha256": "7ce91c57a316d098c9b99eca84f3cc5676d23f9a5f37e949d38bb60bad086985"
+    },
+    {
+      "path": "patches/verify_quarantine_patch.py",
+      "bytes": 5121,
+      "sha256": "41b0631485ace6bbece5aab27d7e55fc49ae3f46c461bf2d9b71d6df47e3a3e8"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 8529,
+      "sha256": "56aca62f9e956f89bbe97c8f3dcb6b00f6bf0641a93266c4300cfe99fcf74a6d"
+    },
+    {
+      "path": "source/LICENSE",
+      "bytes": 1080,
+      "sha256": "8abeab0a7d94144bca83b7c83020f5ec26ea25555ad45e6f7b2e05ce88a95f26"
+    },
+    {
+      "path": "source/auditor__detectors__mi.py",
+      "bytes": 9049,
+      "sha256": "8a7ce46570d48d9f8746372f35f42b8d33f8aad9b999fb25e3cb3438db8ee280"
+    },
+    {
+      "path": "source/auditor__mi_estimators.py",
+      "bytes": 6039,
+      "sha256": "36980b9f08a6160b6e9e82932e0f3e1bd126a01c1476d1d50f18f4b2a9fa84df"
+    },
+    {
+      "path": "source/mi.original.txt",
+      "bytes": 9048,
+      "sha256": "55007e97dbdff88019a6b54b1349e88e383fc3a1e5d4d9f11a15e555b920cec4"
+    },
+    {
+      "path": "source/mi.patched.txt",
+      "bytes": 9521,
+      "sha256": "27b9af5f8f44a923cbc2560a3510e2948bf2a2d44c9d03a2c056472b327d9afd"
+    },
+    {
+      "path": "source/mi_estimators.py",
+      "bytes": 6039,
+      "sha256": "36980b9f08a6160b6e9e82932e0f3e1bd126a01c1476d1d50f18f4b2a9fa84df"
+    },
+    {
+      "path": "source/run_adaptive_lowrate.source.txt",
+      "bytes": 4368,
+      "sha256": "b0f54e115b3b6c7c2d754a450bb5a2e951bd30d0742aae12f9cfb060d6e8ad1e"
+    }
+  ]
+}

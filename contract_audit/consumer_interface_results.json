@@ -1,0 +1,57 @@
+{
+  "scope": "hypothetical data-only interface demonstration, not executed upstream patch/integration or ROC",
+  "source": {
+    "source_path": "source/run_adaptive_lowrate.source.txt",
+    "sha256": "b0f54e115b3b6c7c2d754a450bb5a2e951bd30d0742aae12f9cfb060d6e8ad1e",
+    "union_components": [
+      "acceptance_bias",
+      "cross_run_mi",
+      "permutation_invariance",
+      "signal_bias",
+      "watermark_variance"
+    ],
+    "union_line": 18,
+    "reported_p_dictionary_lines": [
+      81
+    ],
+    "holm_call_lines": [
+      82
+    ]
+  },
+  "illustrative_old_pvalues": {
+    "acceptance_bias": 0.5,
+    "cross_run_mi": 1e-08,
+    "permutation_invariance": 0.5,
+    "signal_bias": 0.5,
+    "watermark_variance": 0.5
+  },
+  "illustrative_quarantined_pvalues": {
+    "acceptance_bias": 0.5,
+    "cross_run_mi": 1.0,
+    "permutation_invariance": 0.5,
+    "signal_bias": 0.5,
+    "watermark_variance": 0.5
+  },
+  "holm_before": {
+    "0.01": [
+      "cross_run_mi"
+    ],
+    "0.001": [
+      "cross_run_mi"
+    ]
+  },
+  "holm_after": {
+    "0.01": [],
+    "0.001": []
+  },
+  "adaptive_payload_rate_example": {
+    "initial": 1.0,
+    "before": 0.55,
+    "after": 1.15,
+    "meaning": "MI-only constructed trigger is removed; algorithm switches from decay to growth"
+  },
+  "raw_statistic_preserved": true,
+  "raw_mi_values_preserved": true,
+  "raw_threshold_decision_at_0_5_preserved": true,
+  "not_established": "No original detector or adaptive pipeline executed; source patch/RNG invariance is a separate static review. No real ROC run."
+}

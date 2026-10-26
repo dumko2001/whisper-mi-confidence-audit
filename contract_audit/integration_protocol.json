@@ -1,0 +1,45 @@
+{
+  "scope": "Small synthetic integration of the inspected pinned detector and estimator modules plus inspected proposed p-value-quarantine detector text; no full upstream pipeline",
+  "source_commit": "48e6713d3e26b49dd94fa6645b4aeac6cb25a229",
+  "external_code_execution_whitelist": [
+    "source/mi.original.txt",
+    "source/mi.patched.txt",
+    "source/mi_estimators.py"
+  ],
+  "local_adapters": [
+    "DetectorContext/DetectorResult data containers",
+    "FeatureExtractor returns preconstructed synthetic features",
+    "Gaussian right-tail helper implemented locally with erfc; not execution of upstream pvalues.py"
+  ],
+  "datasets": "One deterministic fixture: 3 runs \u00d7 2 agents \u00d7 8 ordered rounds, yielding 3 run pairs with 16 rows and 20 concatenated dimensions each",
+  "tests": [
+    "AST inspection of pinned source hashes and source patch preserves all estimate_mi calls and RNG-call expressions",
+    "Run original/patched detector with a deterministic spy estimator; compare complete joint/reference input hashes and estimator arguments across all 3 run pairs",
+    "Run original/patched detector with actual inspected upstream estimator; compare all pre-existing details, raw statistic, MI values, DV/NWJ values exactly",
+    "Verify proposed patch sets p_value=1 and unavailable status only in the intended DV branch",
+    "Constructed MI-only spy case changes standard-Holm consumer decision; no real ROC or production consumer execution",
+    "Four zero-fit edgecase calls: original/patched insufficient-runs and no-pairs outputs exactly match; no added estimator calls"
+  ],
+  "bounds": {
+    "detector_invocations": 8,
+    "spy_estimator_calls": 30,
+    "actual_estimator_calls": 30,
+    "actual_training_steps_total": 4560,
+    "maximum_wall_seconds": 90,
+    "blas_threads": 1
+  },
+  "not_established_even_if_passes": [
+    "Feature extraction correctness on real transcripts",
+    "Actual upstream pvalues.py helper behavior",
+    "Operational calibration, FPR, power, real ROC or full adaptive pipeline",
+    "A calibrated repaired null"
+  ],
+  "execution_guards": [
+    "BLAS thread environment enforced to 1 before NumPy import and recorded; reject preimported NumPy",
+    "Exclusive started marker; reject any existing start/result/failure marker",
+    "Compile and execute only immutable source bytes verified against fixed SHA256 values; never load external pyc caches",
+    "Runtime counters cap and assert 30 actual estimator calls and 4560 training steps",
+    "Assert old p_value equals patched details.uncalibrated_tail_score and all quarantine status/policy/reference fields in both spy and numeric phases"
+  ],
+  "stopping_condition": "One complete bounded run in a fresh empty output directory; record exceptions/timeouts/nonfinite outputs/mismatches as failure; no automatic retry."
+}

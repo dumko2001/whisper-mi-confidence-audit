@@ -1,0 +1,19 @@
+{
+  "recorded_toy_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "blas_threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "recommended_reproduction": {
+    "python": "3.12",
+    "numpy": "2.3.5",
+    "platform": "POSIX/Unix for integration SIGALRM guard",
+    "blas_threads": 1
+  },
+  "execution_note": "Recorded numerical outputs are preserved. The recorded environment covers Python, NumPy, platform, and BLAS thread settings; it is not a complete package lockfile."
+}

@@ -1,0 +1,26 @@
+--- a/auditor/detectors/mi.py
++++ b/auditor/detectors/mi.py
+@@ -178,7 +178,10 @@
+             else 0.01
+         )
+         null_std = math.sqrt(max(null_var, 1e-6))
+-        p_value = gaussian_p_value(statistic, mean=null_mean, std=null_std, tail="right")
++        uncalibrated_tail_score = gaussian_p_value(statistic, mean=null_mean, std=null_std, tail="right")
++        # This reference retains the observed joint and uses a shorter fit.
++        # It is not a calibrated independence null; 1.0 means no rejection.
++        p_value = 1.0
+         mi_report = dv_values
+     else:
+         statistic = sum(plugin_values) / len(plugin_values)
+@@ -202,4 +205,11 @@
+         "num_pairs": len(plugin_values),
+         "estimator": "dv" if use_dv else "plugin",
+     }
++    if use_dv:
++        details.update({
++            "p_value_status": "unavailable",
++            "p_value_policy": "conservative_no_rejection",
++            "reference_kind": "same_joint_marginal_resampling",
++            "uncalibrated_tail_score": uncalibrated_tail_score,
++        })
+     return DetectorResult(name=context.config.name, statistic=statistic, p_value=p_value, details=details)

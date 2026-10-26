@@ -1,0 +1,104 @@
+{
+  "audit_type": "original bounded source-contract counterexample, not operational reproduction",
+  "source": {
+    "commit": "48e6713d3e26b49dd94fa6645b4aeac6cb25a229",
+    "source_access": "read-only AST; external code never imported/executed",
+    "source_files": {
+      "detector": {
+        "path": "source/auditor__detectors__mi.py",
+        "sha256": "8a7ce46570d48d9f8746372f35f42b8d33f8aad9b999fb25e3cb3438db8ee280",
+        "url": "https://github.com/Ostailor/Steganographic_Collusion/blob/48e6713d3e26b49dd94fa6645b4aeac6cb25a229/auditor/detectors/mi.py"
+      },
+      "estimator": {
+        "path": "source/auditor__mi_estimators.py",
+        "sha256": "36980b9f08a6160b6e9e82932e0f3e1bd126a01c1476d1d50f18f4b2a9fa84df",
+        "url": "https://github.com/Ostailor/Steganographic_Collusion/blob/48e6713d3e26b49dd94fa6645b4aeac6cb25a229/auditor/mi_estimators.py"
+      }
+    },
+    "estimate_mi_calls": [
+      {
+        "line": 153,
+        "joint_argument": "joint_sample",
+        "marginal_argument": "marg_sample",
+        "method": "dv",
+        "steps": 200,
+        "batch_size": 64,
+        "seed": 42
+      },
+      {
+        "line": 154,
+        "joint_argument": "joint_sample",
+        "marginal_argument": "marg_sample",
+        "method": "nwj",
+        "steps": 200,
+        "batch_size": 64,
+        "seed": 43
+      },
+      {
+        "line": 160,
+        "joint_argument": "joint_sample",
+        "marginal_argument": "marg_rep",
+        "method": "dv",
+        "steps": 120,
+        "batch_size": 64,
+        "seed": "rep + 100"
+      }
+    ],
+    "dv_helper_max_shifted": true,
+    "dv_final_uses_helper": true,
+    "dv_helper_lines": [
+      73,
+      76
+    ]
+  },
+  "null_contract": {
+    "independent_plugin_mi": 0.0,
+    "dependent_plugin_mi": 0.6931471805599453,
+    "observed_dv_finite_critic": 0.6928117741870494,
+    "same_joint_nominal_null_dv_exact_product": [
+      0.6928117741870494,
+      0.6928117741870494,
+      0.6928117741870494
+    ],
+    "true_independence_dv_fixed_critic_8": -3.3071882258129506,
+    "true_independence_optimized_over_same_finite_critic_grid": 0.0,
+    "fixed_illustrative_joint_plugin_mi": 0.0,
+    "fixed_illustrative_joint_dv": 0.0,
+    "source_same_joint_argument": true,
+    "toy_nominal_null_same_joint_object": true,
+    "source_observed_steps": 200,
+    "source_nominal_null_steps": 120,
+    "budget_ablation": "No neural fitting performed. Equalizing call metadata to 200 leaves joint dataflow unchanged.",
+    "valid_toy_block_permutation_count": 576,
+    "toy_null_statistics_all_finite": true,
+    "toy_null_statistic_range": [
+      0.0,
+      0.6928117741870496
+    ],
+    "toy_null_statistic_mean": 0.09621642880671273,
+    "toy_null_preserves": [
+      "Y-trajectory content and order",
+      "stratum",
+      "independent unit",
+      "X rows",
+      "feature marginals"
+    ],
+    "toy_null_caveat": "Includes identity and residual associations as a valid finite permutation set should; not every draw yields zero MI."
+  },
+  "numerics": {
+    "hypothesis_original_DV_direct_exp_overflows": "NOT SUPPORTED: pinned source already uses max-shifted log-mean-exp and stable softmax",
+    "generic_naive_exp_control_overflows_at_1000": true,
+    "standard_stable_log_mean_exp_1000_999": 999.6201145069583,
+    "source_style_epsilon_stable_log_mean_exp_1000_999": 999.6201145069598,
+    "moderate_direct_stable_abs_difference": 2.220446049250313e-16,
+    "scope": "Finite constructed critic scores, not an end-to-end guarantee for training or extreme nonfinite network activations."
+  },
+  "limitations": [
+    "No external repository code executed; no neural training, paid APIs, or LLM calls.",
+    "No operational p-value, FPR, detector power, benchmark effect, or headline-paper invalidation established.",
+    "Toy independent clusters and within-stratum exchangeability are explicit assumptions, not established for repository run/agent/round rows.",
+    "A production fix must define exchangeable/independent units and all conditioning, then use the same full estimation pipeline and budget for observed and null statistics.",
+    "The exact-product mathematical counterexample isolates the null estimand; it does not reproduce the random finite-reference or trained-network distributions.",
+    "Exported MI p-value versus metric union/ROC scope must be assessed separately from this two-file audit."
+  ]
+}
